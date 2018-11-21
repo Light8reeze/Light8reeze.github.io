@@ -16,7 +16,7 @@
 theme: jekyll-theme-so-simple
 # remote_theme: mmistakes/so-simple-theme
 locale: en-US
-title: "Light8reeze's Dev Diary"
+title: "Light8reeze Dev Diary"
 title_separator: "-"
 description: "My Study Room"
 baseurl: "" # the subpath of your site, e.g. "/blog"
