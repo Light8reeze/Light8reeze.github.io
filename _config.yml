@@ -87,14 +87,14 @@ defaults:
 
 # Site Author
 author: 
-  name: 
+  name: light8reeze
   picture:
-  email:
+  email: light8reeze@gmail.com
   twitter:
   links:
-    - title:
-      url:
-      icon:
+    - title: Github
+      url: https://github.com/light8reeze
+      icon: fab fa-github-square
 
 # Footer Links
 footer_links:
