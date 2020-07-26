@@ -1,4 +1,4 @@
-# c++ 17
+# c++ 17 정리
 
 
 
@@ -21,9 +21,9 @@ void foo(T value)
 
 
 
-## template<auto>
+## template auto
 
-template<auto>는 템플릿 타입을 자동으로 추론하는 키워드이다. 다음과 같이 사용 가능하다.
+template auto는 템플릿 타입을 자동으로 추론하는 키워드이다. 다음과 같이 사용 가능하다.
 
 ```c++
 template<typename T, T value>
