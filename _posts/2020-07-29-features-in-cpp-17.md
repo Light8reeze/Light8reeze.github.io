@@ -1,3 +1,11 @@
+```markdown
+---
+title: "C++17 정리"
+date: 2020-07-29 16:26:28 -0400
+categories: C++
+---
+```
+
 # c++ 17 정리
 
 
@@ -41,9 +49,9 @@ class CConstantAuto
 int main()
 {
 	// template<auto>를 사용하지 않을 경우 타입을 넣어야 한다.
-	CConstant<int, 1>	aConst;
+	CConstant<int, 1> aConst;
 
-	CConstantAuto<1>	aConstAuto;
+	CConstantAuto<1> aConstAuto;
 	return 0;
 }
 ```
@@ -60,16 +68,16 @@ int main()
 using var = std::variant<int, float>;
 var a = 5;
 
-std::cout << std::get<int>(a)	<< std::endl;		// 5
-std::cout << std::get<0>(a)		<< std::endl;		// int 형 값 반환(5)
-std::cout << std::get<float>(a) << std::endl;		// std::bad_variant_access 예외 발생
-std::cout << std::get<1>(a)		<< std::endl;		// std::bad_variant_access 예외 발생
+std::cout << std::get<int>(a) << std::endl; // 5
+std::cout << std::get<0>(a) << std::endl; // int 형 값 반환(5)
+std::cout << std::get<float>(a) << std::endl; // std::bad_variant_access 예외 발생
+std::cout << std::get<1>(a) << std::endl; // std::bad_variant_access 예외 발생
 
 // int형 값을 설정했으므로 int형 인덱스 0이 반환된다.
 std::cout << a.index() << std::endl;
 
-std::cout << std::get_if<int>(&a)	<< std::endl;	// int* 형 값을 반환한다.
-std::cout << std::get_if<float>(&a) << std::endl;	// nullptr을 반환한다.
+std::cout << std::get_if<int>(&a)	<< std::endl; // int* 형 값을 반환한다.
+std::cout << std::get_if<float>(&a) << std::endl; // nullptr을 반환한다.
 ```
 
 std::variant는 std::visit를 이용하여 variant에 있는 타입에 따른 오버로딩을 처리할 수 있다.
@@ -118,8 +126,8 @@ std::any는 아무 값이나 담을 수 있는 클래스이다. 그러나 복사
 std::any a;
 a.emplace<int>(5); // a = 5로도 사용 가능하다.
 
-std::cout << a.type().name() << std::endl;			// int 출력
-std::cout << std::any_cast<int>(a) << std::endl;	// 5 출력
+std::cout << a.type().name() << std::endl; // int 출력
+std::cout << std::any_cast<int>(a) << std::endl; // 5 출력
 ```
 
 위 코드처럼 아무 값이나 넣을 수 있고, std::any_cast를 이용하여 값을 사용 할 수 있다. std::any_cast는 std::any를 특정 형식으로 변환시켜주는 함수이다. 형식에 맞지 않을경우 std::bad_any_cast예외를 발생한다. 이러한 형식 안정성 때문에 std::any를 안전한 void*라고 하기도 한다. std::any를 이용하여 std::vector, 배열을 이용하여 다양한 값을 담을 수 있다.
