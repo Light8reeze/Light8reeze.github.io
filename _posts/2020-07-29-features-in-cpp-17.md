@@ -1,9 +1,10 @@
 ```markdown
----
 title: "C++17 정리"
-date: 2020-07-29 16:26:28 -0400
-categories: C++
----
+categories:
+  - c++
+tags:
+  - c++
+last_modified_at: 2020-08-08T19:04:00-09:00
 ```
 
 ## Constexpr if
