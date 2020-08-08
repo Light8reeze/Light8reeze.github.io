@@ -6,10 +6,6 @@ categories: C++
 ---
 ```
 
-# c++ 17 정리
-
-
-
 ## Constexpr if
 
 constexpr if는 컴파일 타임에 결정되는 if문이다
