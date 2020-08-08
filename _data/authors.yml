@@ -1,0 +1,11 @@
+# Sample Authors
+# Remove file or replace with your own
+
+light8reeze:
+  name: light8reeze
+  picture: /images/light8reeze_photo.png
+  twitter: "@light8reeze"
+  links:
+    - title: Twitter
+      url: https://twitter.com/light8reeze
+      icon: fab fa-twitter-square

@@ -15,8 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 theme: jekyll-theme-so-simple
 remote_theme: mmistakes/so-simple-theme
-locale: en-US
-title: "light8reeze private Lab"
+skin: "/assets/css/skins/default.css"
+locale: ko-KR
+title: "light8reeze's Game Lab"
 description: ""
 baseurl: "" # the subpath of your site, e.g. "/blog"
 url: "https://light8reeze.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -34,7 +35,7 @@ google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
   shortname: # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
-  username: # site's Twitter username, e.g. "mmistakes"
+  username: light8reeze # site's Twitter username, e.g. "mmistakes"
 
 # Liquid
 liquid:
@@ -54,8 +55,8 @@ feed:
 search_full_content: false # can have performance implications for large sites
 
 # Taxonomy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -84,11 +85,12 @@ defaults:
     values:
       layout: post
       share: true
+      comments: true
 
 # Site Author
 author: 
   name: light8reeze
-  picture:
+  picture: /images/light8reeze_photo.png
   email: light8reeze@gmail.com
   twitter:
   links:
@@ -98,6 +100,9 @@ author:
 
 # Footer Links
 footer_links:
+  - title: GitHub
+    url: https://github.com/light8reeze
+    icon: fab fa-github-square
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-squar

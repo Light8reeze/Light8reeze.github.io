@@ -1,12 +1,12 @@
-```markdown
-title: "C++17 정리"
+---
+title: "C++ 17 기능 정리"
 categories:
-  - c++
+  - C++
 tags:
-  - c++
-last_modified_at: 2020-08-08T19:04:00-09:00
-```
-
+  - C++
+  - C++17
+last_modified_at: 2020-08-08T14:25:52-05:00
+---
 ## Constexpr if
 
 constexpr if는 컴파일 타임에 결정되는 if문이다
@@ -73,7 +73,7 @@ std::cout << std::get<1>(a) << std::endl; // std::bad_variant_access 예외 발�
 // int형 값을 설정했으므로 int형 인덱스 0이 반환된다.
 std::cout << a.index() << std::endl;
 
-std::cout << std::get_if<int>(&a)	<< std::endl; // int* 형 값을 반환한다.
+std::cout << std::get_if<int>(&a) << std::endl; // int* 형 값을 반환한다.
 std::cout << std::get_if<float>(&a) << std::endl; // nullptr을 반환한다.
 ```
 
